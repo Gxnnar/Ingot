@@ -41,7 +41,7 @@ document.documentElement.innerHTML = `<html><head><link rel="icon" href="data:im
 <div class="items" id="items">
 <div class="patched">Error: This may have been patched</div>
 <div class="wrongpage">You are not on the correct page.<br>To use Ingot click the button below to redirect and run the bookmarklet again.<div class="item-left-buttons" style="justify-content: center; margin: 20px;">
-<div class="item-left-button" onclick="window.location='https://chrome.google.com/webstorex'">Redirect</div>
+<div class="item-left-button" onclick="window.location='https://turbo-cod-5gx7gxqp975crp6-8080.app.github.dev/'">Redirect</div>
 </div></div>
 </div>
 </div>
@@ -630,7 +630,7 @@ items[item].querySelector(".item-main .item-img-wrapper .item-img").src = await 
 }
 
 //Show wrong page popup
-if (!window.location.toString().startsWith("https://chrome.google.com/webstore")) {
+if (!window.location.toString().startsWith("https://turbo-cod-5gx7gxqp975crp6-8080.app.github.dev/")) {
 document.getElementById("items").setAttribute("wrongpage", "")
 } else {
 //Checks if it still works
